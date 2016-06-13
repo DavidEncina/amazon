@@ -119,6 +119,7 @@ public class Flota
         while (i < vehiculos.size() && !encontrado) {
             if (vehiculos.get(i).getNumero() == numero) {
                 if (vehiculos.get(i) instanceof Coche) {
+                    datos = new int[5];
                     datos[0] = vehiculos.get(i).getNumero();
                     datos[1] = vehiculos.get(i).getAntiguedad();
                     datos[2] = vehiculos.get(i).getKilometraje();
@@ -128,6 +129,7 @@ public class Flota
             }
             if (vehiculos.get(i).getNumero() == numero) {
                 if (vehiculos.get(i) instanceof FurgonetaPequena) {
+                    datos = new int[4];
                     datos[0] = vehiculos.get(i).getNumero();
                     datos[1] = vehiculos.get(i).getAntiguedad();
                     datos[2] = vehiculos.get(i).getKilometraje();
@@ -136,6 +138,7 @@ public class Flota
             }
             if (vehiculos.get(i).getNumero() == numero) {
                 if (vehiculos.get(i) instanceof FurgonetaGrande) {
+                    datos = new int[4];
                     datos[0] = vehiculos.get(i).getNumero();
                     datos[1] = vehiculos.get(i).getAntiguedad();
                     datos[2] = vehiculos.get(i).getKilometraje();
@@ -144,6 +147,7 @@ public class Flota
             }
             if (vehiculos.get(i).getNumero() == numero) {
                 if (vehiculos.get(i) instanceof Camion) {
+                    datos = new int[4];
                     datos[0] = vehiculos.get(i).getNumero();
                     datos[1] = vehiculos.get(i).getAntiguedad();
                     datos[2] = vehiculos.get(i).getKilometraje();
